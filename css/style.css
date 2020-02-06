@@ -12,26 +12,42 @@ body {
 section.grid-two{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	grid-gap: 40px;
 }
+section.grid-three{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: auto;
+	grid-gap: 40px;
 
+}
+.links{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+	margin: auto;
+	grid-gap: 40px;
+	font-size: 16px;
+	color: pink;
+
+
+}
 
 
 h1{
 	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
 }
 
-h1 {
-	font-size: 36px;
 
-
-}
 p {
-	font-size: 12px;
+	font-size: 20px;
 	margin-top: 0px;
 	margin-bottom: 20px;
+	padding-right: 10px;
 
 }
 .bo{
@@ -39,13 +55,21 @@ p {
 	width: 50%;
 	margin: auto;
 	margin-right: 80px;
-	margin-bottom: 80px;
+	margin-top: -200px;
 	grid-gap: 40px;
 
 }
+.bo2{
+	grid-template-columns: 1fr 1fr;
+	width: 50%;
+	margin: auto;
+	margin-left: 80px;
+	margin-bottom: -200px;
+	grid-gap: 40px;
+}
 
 
-    
+
     .bo{
       animation-name: blob;
       animation-duration: 1s;
@@ -58,19 +82,24 @@ p {
       100%{transfrom:rotate(-20deg);}
 
     }
+		.bo2{
+			animation-name: blob2;
+			animation-duration: 1s;
+		}
 
+		@keyframes blob2 {
+			0%{ transform:rotate(20deg);}
+			25% {transform:rotate(-20deg);}
+			50% {transform: rotate(20deg);}
+			100%{transfrom:rotate(-20deg);}
+
+		}
 
 .imgg2 {
 	margin-top: 0px;
 	width: 100%
 }
-.pocho {
-	font-size: 12px;
-	width: 40%;
-	margin-top: 0px;
-	margin-left: 0px;
 
-}
 
 
 .topnav {
