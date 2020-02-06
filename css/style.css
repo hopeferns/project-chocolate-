@@ -9,6 +9,13 @@ body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	 }
+section.grid-two{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: auto;
+	grid-gap: 40px;
+}
 
 
 
@@ -18,25 +25,50 @@ h1{
 
 h1 {
 	font-size: 36px;
-	margin-left: 800px;
-	margin-top: 200px;
 
 
 }
 p {
 	font-size: 12px;
-	margin-left: 600px;
 	margin-top: 0px;
-	padding-right: 90px;
-	padding-left:50px;
+	margin-bottom: 20px;
 
 }
-.placeholder {
-    width: 40%;
-		margin-top: 0px;
-		margin-left: 70px;
-		display:grid;
-		grid-template-columns: 1fr 1fr;
+.bo{
+	grid-template-columns: 1fr 1fr;
+	width: 50%;
+	margin: auto;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	grid-gap: 40px;
+
+}
+
+
+    
+    .bo{
+      animation-name: blob;
+      animation-duration: 1s;
+    }
+
+    @keyframes blob {
+      0%{ transform:rotate(20deg);}
+      25% {transform:rotate(-20deg);}
+      50% {transform: rotate(20deg);}
+      100%{transfrom:rotate(-20deg);}
+
+    }
+
+
+.imgg2 {
+	margin-top: 0px;
+	width: 100%
+}
+.pocho {
+	font-size: 12px;
+	width: 40%;
+	margin-top: 0px;
+	margin-left: 0px;
 
 }
 
